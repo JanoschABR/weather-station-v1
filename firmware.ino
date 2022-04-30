@@ -413,7 +413,7 @@ void loop () {
 
         body.header();
         body.tagStart("data");
-        body.tagField("scheme", "default");
+        body.tagField("scheme", "weather-station-v1");
         body.tagField("version", "1");
         body.tagEnd(true, false);
 
