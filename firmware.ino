@@ -385,6 +385,9 @@ void setup () {
 
     // Initialize WiFi
     init_wifi();
+    
+    // Make a status report
+    status_report("startup");
 
     // Initialize the DHT sensor
     dht.begin();
