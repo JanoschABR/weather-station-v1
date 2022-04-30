@@ -322,7 +322,7 @@ void status_report (string source) {
 
         body.header();
         body.tagStart("data");
-        body.tagField("scheme", "jnn");
+        body.tagField("scheme", "weather-station-v1");
         body.tagField("version", "1");
         body.tagEnd(true, false);
 
