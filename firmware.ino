@@ -295,6 +295,14 @@ void init_wifi () {
 
 string send_to_server (string content) {
 
+    // Restart if the WiFI is unreachable
+    if (WiFi.status() != WL_CONNECTED) {
+        Serial.println("WiFi is unreachable! Restarting...");
+        delay(1000);
+        Serial.end();
+        ESP.restart();
+    }
+    
     WiFiClient client;
     HTTPClient http;
 
