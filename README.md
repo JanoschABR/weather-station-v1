@@ -5,7 +5,7 @@ A simple weather station based on an ESP8266.
 
 ## Todo
  - [ ] - [05/01/2022] - Reconnect on WiFi failure
- - [ ] - [05/01/2022] - Automatic restart to ensure internal timer doesn't drift  
+ - [X] - [05/01/2022] - Automatic restart to ensure internal timer doesn't drift  
 <sup>&nbsp;&nbsp;&nbsp;This is true for Arduinos (after ~50 days), not so sure about ESPs. Probably best to add it, just to be sure.</sup>
 
 ## Oops~!
