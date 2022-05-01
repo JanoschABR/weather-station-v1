@@ -5,7 +5,8 @@ A simple weather station based on an ESP8266.
 
 ## Todo
  - [ ] - [05/01/2022] - Reconnect on WiFi failure
- - [ ] - [05/01/2022] - Automatic restart to ensure internal timer doesn't drift
+ - [ ] - [05/01/2022] - Automatic restart to ensure internal timer doesn't drift  
+<sup>&nbsp;&nbsp;&nbsp;This is true for Arduinos (after ~50 days), not so sure about ESPs. Probably best to add it, just to be sure.</sup>
 
 ## Oops~!
 As of right now the DHT21 is connected to the same pin as the BUILTIN_LED. I noticed this after I assembled the circuit and didn't want to change it again. This is not really an issue, since it doesn't seem to make the sensor output wrong data. This does however make the builtin LED unuseable; The LED will simply light up whenever data is read from the sensor.
