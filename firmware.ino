@@ -394,6 +394,9 @@ void setup () {
     dht.begin();
 }
 
+// Keep track of how many times we've sent data to the server
+int post_count = 1;
+
 // Called continuously after startup
 void loop () {
     
@@ -452,6 +455,13 @@ void loop () {
     r_buffer.close();
     LittleFS.remove("temp.xml");
 
+    // Reboot after a day of being online
+    if (post_count > 24) {
+        Serial.end();
+        ESP.restart();
+    }
+    
     // 60 minutes (Minutes * Seconds per Minute * Milliseconds per Second)
     delay((60 * 60) * 1000);
+    post_count++;
 }
