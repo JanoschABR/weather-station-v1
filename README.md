@@ -4,8 +4,8 @@ A simple weather station based on an ESP8266.
 ![Overview](https://github.com/JanoschABR/weather-station-v1/blob/d3cf0b37891ef15b32f3fb7d15556ca328d79d1d/assets/overview.jpg)
 
 ## Todo
- - [X] - [05/01/2022] - Reconnect on WiFi failure
- - [X] - [05/01/2022] - Automatic restart to ensure internal timer doesn't drift  
+ - [X] - Reconnect on WiFi failure
+ - [X] - Automatic restart to ensure internal timer doesn't drift  
 <sup>&nbsp;&nbsp;&nbsp;This is true for Arduinos (after ~50 days), not so sure about ESPs. Probably best to add it, just to be sure.</sup>
 
 ## Oops~!
