@@ -452,5 +452,6 @@ void loop () {
     r_buffer.close();
     LittleFS.remove("temp.xml");
 
-    delay(10000);
+    // 60 minutes (Minutes * Seconds per Minute * Milliseconds per Second)
+    delay((60 * 60) * 1000);
 }
