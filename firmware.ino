@@ -465,6 +465,8 @@ void loop () {
 
     // Reboot after a day of being online
     if (post_count > 24) {
+        Serial.println("I've been online for a long time! Restarting...");
+        delay(1000);
         Serial.end();
         ESP.restart();
     }
